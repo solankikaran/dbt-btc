@@ -11,3 +11,5 @@ wheels/
 
 # Log file
 logs/
+
+set-env.ps1
