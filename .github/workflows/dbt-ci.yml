@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   dbt-run:
-    name: Prod deps and runn
+    name: Prod deps and run
     runs-on: ubuntu-latest
     env:
       SNOWFLAKE_ACCOUNT:  "${{ secrets.SNOWFLAKE_ACCOUNT }}"
