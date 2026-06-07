@@ -12,7 +12,7 @@ FROM {{ source('raw', 'btc') }}
 {% if is_incremental() %}
 
 WHERE block_timestamp >= (
-    SELECT MAX(block_timestampe) 
+    SELECT MAX(block_timestamp) 
     FROM {{ this }}
 )
 
